@@ -6,7 +6,7 @@ Dans le cadre de mes etudes, vous pourrez suivre au fur et a mesure l'evolution 
 ## Projet Portefolio
 Bonjour voici un projet d'un portefolio que j'ai réalisé
 sous la direction de Mr Militello.
-[voir la page](https://lucas93220.github.io/new_portefolio/)
+[voir la page](https://lucas93220.github.io/portfolio/)
 
 
 
