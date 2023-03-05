@@ -31,6 +31,14 @@ button{
 *{
     box-sizing: border-box;
 }
+
+section{
+    height: 100vh; 
+}
+
+.pieddepage{
+    height: 80vh;
+}
 /* theme */
 header{
     position: fixed;
@@ -102,7 +110,7 @@ main{
     
 }
 /* pour les articles */
-div h2{
+section h2{
     font-style: italic;
     letter-spacing:1rem;
     text-align: center;
@@ -161,6 +169,7 @@ section article h3{
 #carouselExampleDark{
     width: 25%;
     margin: auto;
+    padding-top: 17rem;
 }
  /*Bouton*/
 
@@ -209,6 +218,7 @@ footer h2, footer p{
 }
 footer h2{
     font-size: 2.6rem;
+    color: #000000;
     
 }
 footer h2::before{
@@ -231,7 +241,7 @@ footer h2::before{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 100%;
-    height: 70%;
+    height: 80%;
     padding: 4rem;
     gap: 6rem;
     color: rgb(255, 255, 255);
@@ -273,9 +283,13 @@ footer h2::before{
 }
 
 /*telephone et mail dans le footer*/
+footer{
+    padding-top: 20rem;
+}
 footer .phone, footer .mail{
     display: inline-block;
     width: 80rem;
+    padding-top: 10rem;
     font-size: initial;
     background-color: #fff; 
 }
