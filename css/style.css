@@ -232,7 +232,7 @@ footer h2::before{
 }
 .container {
     height: 300px;
-    width: 665px;
+    width: 1300px;
     top: 60px;
     left: calc(50% - 300px);
     display: flex;
@@ -241,7 +241,7 @@ footer h2::before{
   .card {
     display: flex;
     height: 70rem;
-    width: 20rem;
+    width: 36rem;
     background-color: #17141d;
     border-radius: 5px;
     box-shadow: -1rem 0 3rem #000;
