@@ -30,6 +30,8 @@ button{
 }
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 section{
@@ -41,6 +43,8 @@ section{
 .pieddepage{
     height: 80vh;
 }
+
+
 /* theme */
 header{
     position: fixed;
@@ -62,6 +66,7 @@ header nav ul{
 }
 header .main-title{
     letter-spacing: 0.750rem;
+    text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
 }
@@ -103,6 +108,7 @@ nav ul li a{
     display: block;
     width: 100%;
     letter-spacing:.5rem;
+    text-transform: uppercase;
 }
 /* articles */
 main{
@@ -245,12 +251,31 @@ footer h2::before{
     background-color: #17141d;
     border-radius: 5px;
     box-shadow: -1rem 0 3rem #000;
-  /*   margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
   }
+
+  /* .card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  } */
+
+  /* .card.animate {
+    animation: cardAnimation 1s forwards;
+  }
   
+  @keyframes cardAnimation {
+    /* les étapes de l'animation 
+  }
+  
+  .card.animate img {
+    display: block;
+  } */
+
   .card:not(:first-child) {
       margin-left: -50px;
   }
@@ -367,8 +392,8 @@ footer h2::before{
 }
 .card-container>li>ul>li{
     font-size: 1.6rem;
-    list-style:circle;
-    text-align: center;
+    list-style: inside;
+    padding: 1.6rem;
 }
 .card-container{
     animation: slide ease-in-out 1.3s; 
@@ -393,109 +418,50 @@ footer .phone h5, footer .mail h5{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* mobile */
-@media screen and (max-width: 70rem){
+/* Responsive */
+@media screen and (max-width: 768px) {
+    /* Header */
     header{
-        position: sticky;
-        width: auto;
+        position: static;
+        height: auto;
     }
-    header ul, nav, header nav ul{
-        display: block;
-        width: auto;
-        
-        
-    }
-
-   
-    nav ul li a{
-        display: block;
+    .main-title{
         text-align: center;
-        font-size: 1.6rem;
-        padding: .5rem;
+        font-size: 3rem;
+    }
+    nav{
         width: 100%;
-        
     }
     nav ul li{
-        display: inline-block;
-        width: calc(100% / 3);
-        line-height: 4.6rem;
-        
+        width: calc(100% / 2);
+        line-height: 4rem;
     }
-    nav ul li a{
-        padding: 0;
+    /* Articles */
+    section h2{
+        font-size: 3.6rem;
     }
-   main{
-       margin: 0 1%;
-   }
-   h3{
-    font-size: 1.1rem;
-   }
-   /* article */
-   section article{
-    top: 0;
-    display: block;
-    width: auto;
-    margin-bottom: 1rem;
-  
-   
-   }
-   section article h2{
-    display: block;
-    
-    
-
-   }
-    section:nth-of-type(2) article{
-        display: block;
-        width: auto;
-        background-color: #222;
-        padding: 1rem;
-        
-    }
-    section:nth-of-type(2) figure img{
-        height: 100px;
-    }
- 
-    /* footer */
-    footer .phone, footer .mail{
-        display: block;
-        width: auto;
-         
-    }
-  
-    footer p{
-        padding: .5rem;
-        text-align: justify;
-    }
-
-    section:nth-of-type(2) figcaption h3{
-        font-size: 1.6rem;
-        line-height: 2rem;
-    }
-
-}
-@media screen and (orientation: landscape){
-    nav ul li a{
-      
-        font-size: 2rem;
-        
-    }
-}
-@media screen and (min-width: 80rem){
-    nav ul li a{
-      
+    section h3{
         font-size: 2.6rem;
-        
+    }
+    section article{
+        width: calc(100% / 2 - 1rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Header */
+    nav ul li{
+        width: 100%;
+        line-height: 3rem;
+    }
+    /* Articles */
+    section h2{
+        font-size: 3rem;
+    }
+    section h3{
+        font-size: 2rem;
+    }
+    section article{
+        width: 100%;
     }
 }
