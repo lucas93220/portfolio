@@ -465,3 +465,17 @@ footer .phone h5, footer .mail h5{
         width: 100%;
     }
 }
+@media screen and (orientation: landscape){
+    nav ul li a{
+      
+        font-size: 2rem;
+        
+    }
+}
+@media screen and (min-width: 80rem){
+    nav ul li a{
+      
+        font-size: 2.6rem;
+        
+    }
+}
